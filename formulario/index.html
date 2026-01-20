@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Interesse</title>
+</head>
+<body>
+
+  <h1>Formulário de Interesse</h1>
+
+  <form>
+    <label for="nome">Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" name="idade" min="18" max="120" required><br><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" required><br><br>
+
+    <p>Conteúdo de maior interesse:</p>
+    <input type="radio" id="html" name="interesse" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="interesse" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="js" name="interesse" value="JavaScript" checked>
+    <label for="js">JavaScript</label><br><br>
+
+    <label for="opiniao">Deixe sua opinião:</label><br>
+    <textarea id="opiniao" name="opiniao" rows="5" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>
+</html>
